@@ -32,12 +32,12 @@ func TestDateVersionString(t *testing.T) {
 	if err != nil {
 		t.Fatalf("error parsing version: %v", err)
 	}
-	if version.String() != "2021-12-08" { // nolint:goconst // testing
+	if version.String() != "2021-12-08" { //nolint:goconst // testing
 		t.Fatalf("bad string representation: %s", version.String())
 	}
 }
 
-// nolint:errcheck // testing
+//nolint:errcheck // testing
 func TestDateVersionCompare(t *testing.T) {
 	v1, _ := NewDateVersion("2021-12-08")
 	v2, _ := NewDateVersion("2021-12-09")
