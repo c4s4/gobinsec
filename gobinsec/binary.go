@@ -98,8 +98,6 @@ func LoadVulnerabilities(dependencies chan *Dependency, wg *sync.WaitGroup) {
 }
 
 // Report prints a report on terminal
-//
-//nolint:gocyclo // this is life
 func (b *Binary) Report() {
 	fmt.Printf("%s: ", filepath.Base(b.Path))
 	if b.Vulnerable {
