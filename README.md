@@ -2,6 +2,8 @@
 
 This tool parses Go binary dependencies and calls [NVD database](https://nvd.nist.gov/) to produce a vulnerability report. Binaries must have been built with module support to be analyzed with Gobinsec.
 
+> This product uses data from the NVD API but is not endorsed or certified by the NVD.
+
 ## Table of Contents
 
 1. [Installation](#installation)
